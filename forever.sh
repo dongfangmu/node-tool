@@ -41,6 +41,7 @@ function v2ray(){
     echo "---------------------------------------------------------------------------"
 
     read -n 1
+    echo '1.1.1.1 www.baidu.com' >>/etc/hosts
     apt-get update -y
     apt-get install curl -y
     bash <(curl -L -s  https://raw.githubusercontent.com/dongfangmu/v2ray-sspanel-v3-mod_Uim-plugin/master/install-release.sh) \
